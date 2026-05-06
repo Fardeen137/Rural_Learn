@@ -1,0 +1,111 @@
+{
+  "theme_and_archetype": {
+    "theme": "Light",
+    "archetype": "Archetype 6: Vibrant Play (Adapted for Rural India)",
+    "reasoning": "A light theme is essential for outdoor/daylight legibility on budget smartphones. Archetype 6 (Vibrant Play) brings warmth and approachability for school students, while earthy undertones ground it in a familiar Indian context, replacing harsh tech-blues with warm clay, yellow, and teal.",
+    "emotional_tone": "Encouraging, accessible, clear, trustworthy, and tactile."
+  },
+  "typography": {
+    "primary_font": "Baloo 2",
+    "secondary_font": "Hind",
+    "font_strategy": "Headings use Baloo 2 (or a rounded fallback like Nunito) for a friendly, approachable voice. Body text MUST use Hind (or system fonts like Noto Sans Devanagari/Tamil) to ensure flawless rendering of Hindi and Tamil scripts on low-end Android devices.",
+    "scale": {
+      "h1": "text-3xl md:text-4xl font-bold tracking-tight",
+      "h2": "text-2xl md:text-3xl font-bold",
+      "h3": "text-xl font-semibold",
+      "body": "text-base md:text-lg leading-relaxed",
+      "small_label": "text-sm font-medium tracking-wide uppercase"
+    },
+    "accessibility_rules": "Minimum body size should be text-base (16px) but visually text-lg is preferred for low-literacy users. High contrast against backgrounds is mandatory (WCAG AA minimum)."
+  },
+  "colors": {
+    "background": {
+      "default": "#FFFDF7",
+      "surface": "#FFFFFF",
+      "highlight": "#F3F0E6"
+    },
+    "brand": {
+      "primary": "#E85D04",
+      "primary_hover": "#DC2F02",
+      "secondary": "#FFB703",
+      "accent": "#2A9D8F"
+    },
+    "text": {
+      "primary": "#023047",
+      "secondary": "#4A4E69",
+      "disabled": "#9CA3AF"
+    },
+    "status": {
+      "success": "#2A9D8F",
+      "warning": "#FFB703",
+      "error": "#D62828"
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "p-4, p-6, p-8 for containers. Generous breathing room.",
+    "touch_targets": "CRITICAL: All interactive elements (buttons, links, list items) MUST have a minimum height of 56px (preferably 64px) to accommodate developing motor skills and low-precision tapping.",
+    "border_radius": "rounded-2xl for main cards, rounded-full for buttons and badges.",
+    "borders_and_shadows": "Neo-brutalist Lite: Soft clay-like UI. 1px solid border (`border-[#023047]/10`) with a distinct, slightly offset solid shadow (e.g., `shadow-[0_4px_0_rgba(2,48,71,0.1)]`) to make buttons and cards feel physical and pressable."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#E85D04] text-white rounded-full min-h-[56px] font-bold text-lg flex items-center justify-center w-full px-6",
+      "secondary": "bg-[#F3F0E6] text-[#023047] rounded-full min-h-[56px] font-bold text-lg border-2 border-[#023047]/10 px-6",
+      "icon_button": "p-4 rounded-full bg-[#FFB703]/20 text-[#E85D04] min-h-[56px] min-w-[56px] flex items-center justify-center"
+    },
+    "cards": {
+      "course_card": "bg-white p-4 rounded-2xl border border-[#023047]/10 shadow-sm flex flex-col gap-3 overflow-hidden",
+      "quiz_card": "bg-[#FFFDF7] p-6 rounded-2xl border-2 border-[#2A9D8F]/20 text-center"
+    },
+    "navigation": {
+      "bottom_tab": "Fixed bottom, bg-white border-t border-gray-200. 5 tabs. Icons MUST be large (min 28px). Text labels under icons are MANDATORY for low-literacy clarity.",
+      "header": "Clean white bg, left-aligned Title, right-aligned Language Switcher (A/अ/அ)."
+    },
+    "inputs": {
+      "text_input": "min-h-[56px] bg-[#F3F0E6] border border-[#023047]/10 rounded-xl px-4 text-lg text-[#023047] placeholder:text-[#4A4E69]"
+    },
+    "feedback": {
+      "progress_bar": "h-3 rounded-full bg-gray-200 overflow-hidden. Fill color: #2A9D8F.",
+      "offline_badge": "bg-[#023047] text-white px-3 py-1 rounded-full text-xs font-bold inline-flex items-center gap-1"
+    }
+  },
+  "icons": {
+    "library_recommendation": "@expo/vector-icons (Feather or Ionicons) or lucide-react (if using React Web)",
+    "rules": "Icons must be prominent. Do not use abstract/clever icons. Use literal metaphors: Book for courses, Chat Bubble for discussion, Chart for progress, Home for dashboard. Avoid emojis."
+  },
+  "motion": {
+    "strategy": "Minimal and performant. Target devices may be low-end Androids.",
+    "interactions": "Use simple scaling on press (e.g., active:scale-[0.98]) and basic opacity cross-fades for screen transitions."
+  },
+  "media": {
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1692269725911-87697c558be1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBydXJhbCUyMHNjaG9vbCUyMGtpZHMlMjBoYXBweXxlbnwwfHx8fDE3Nzc2MTkwOTd8MA&ixlib=rb-4.1.0&q=85",
+        "category": "onboarding_hero",
+        "description": "Two young girls sitting at a desk in a classroom, perfect for onboarding or auth screen background."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1692269725887-51e67bf1bed0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBydXJhbCUyMHNjaG9vbCUyMGtpZHMlMjBoYXBweXxlbnwwfHx8fDE3Nzc2MTkwOTd8MA&ixlib=rb-4.1.0&q=85",
+        "category": "student_profile_placeholder",
+        "description": "Two young boys sitting at a table, useful for community/chat empty states."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1760009229725-7ef1990e585f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwzfHwzZCUyMGVkdWNhdGlvbiUyMGljb25zJTIwaWxsdXN0cmF0aW9ufGVufDB8fHx8MTc3NzYxOTEwMXww&ixlib=rb-4.1.0&q=85",
+        "category": "course_thumbnail",
+        "description": "School supplies floating (3D aesthetic), useful for default course thumbnails."
+      }
+    ],
+    "rules": "Never use pure white backgrounds behind images without a container. Always use soft radiuses (rounded-2xl) on image wrappers."
+  },
+  "instructions_to_main_agent": [
+    "This is an Expo React Native mobile app (or React Web App styled as Mobile First). Assume standard mobile layout paradigms (column direction, constrained widths).",
+    "CRITICAL: If building for React Native/Expo, use <View>, <Text>, <TouchableOpacity> with Nativewind or style objects. If building a mobile web app in standard React, ensure a strict mobile constraint (e.g., max-w-md mx-auto min-h-screen).",
+    "All interactive elements MUST include data-testid (e.g., data-testid='login-button', data-testid='course-item') as required by the prompt.",
+    "Accessibility is non-negotiable. Add standard ARIA or React Native accessibility props (accessible={true}, accessibilityLabel) to all touchable elements.",
+    "Prioritize Vernacular: Ensure the Language Switcher (A/अ/அ) is extremely prominent in the header. Do not hide it deep in a settings menu.",
+    "Implement the UI with a 'Fat and Friendly' aesthetic. Large text (min text-base), large icons, generous spacing. Do not use standard dense corporate layouts.",
+    "For the Video Player, use a robust YouTube embed solution that works well on mobile.",
+    "Mock offline mode visually: Use badges like 'Available Offline' and download icon toggles on course cards.",
+    "For the Discussion tab, differentiate teacher messages visually (e.g., a subtle #FFB703 background tint or border) from student messages."
+  ]
+}

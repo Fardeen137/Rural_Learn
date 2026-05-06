@@ -1,0 +1,77 @@
+// Language translations for the app
+export type Lang = "en" | "hi" | "ta";
+
+export const translations: Record<string, Record<Lang, string>> = {
+  app_name: { en: "Rural Learn", hi: "ग्रामीण शिक्षा", ta: "கிராம கற்றல்" },
+  tagline: {
+    en: "Learning for every child",
+    hi: "हर बच्चे के लिए शिक्षा",
+    ta: "ஒவ்வொரு குழந்தைக்கும் கல்வி",
+  },
+  login: { en: "Log In", hi: "लॉग इन", ta: "உள்நுழைய" },
+  signup: { en: "Sign Up", hi: "नया खाता", ta: "பதிவு செய்ய" },
+  email: { en: "Email", hi: "ईमेल", ta: "மின்னஞ்சல்" },
+  password: { en: "Password", hi: "पासवर्ड", ta: "கடவுச்சொல்" },
+  name: { en: "Your Name", hi: "आपका नाम", ta: "உங்கள் பெயர்" },
+  role: { en: "I am a", hi: "मैं हूँ", ta: "நான்" },
+  student: { en: "Student", hi: "विद्यार्थी", ta: "மாணவர்" },
+  teacher: { en: "Teacher", hi: "शिक्षक", ta: "ஆசிரியர்" },
+  welcome_back: { en: "Welcome back!", hi: "वापसी पर स्वागत है!", ta: "மீண்டும் வரவேற்கிறோம்!" },
+  get_started: { en: "Let's get started", hi: "चलिए शुरू करते हैं", ta: "தொடங்குவோம்" },
+  home: { en: "Home", hi: "घर", ta: "முகப்பு" },
+  courses: { en: "Courses", hi: "पाठ्यक्रम", ta: "பாடங்கள்" },
+  progress: { en: "Progress", hi: "प्रगति", ta: "முன்னேற்றம்" },
+  chat: { en: "Chat", hi: "चर्चा", ta: "அரட்டை" },
+  profile: { en: "Profile", hi: "प्रोफ़ाइल", ta: "சுயவிவரம்" },
+  continue_learning: { en: "Continue Learning", hi: "सीखना जारी रखें", ta: "கற்றலைத் தொடரவும்" },
+  all_courses: { en: "All Courses", hi: "सभी पाठ्यक्रम", ta: "அனைத்து பாடங்கள்" },
+  lessons: { en: "Lessons", hi: "पाठ", ta: "பாடங்கள்" },
+  quizzes: { en: "Quizzes", hi: "प्रश्नोत्तरी", ta: "வினாடி வினா" },
+  discussion: { en: "Discussion", hi: "चर्चा", ta: "கலந்துரையாடல்" },
+  start_quiz: { en: "Start Quiz", hi: "प्रश्नोत्तरी शुरू करें", ta: "வினாடி வினா தொடங்க" },
+  submit: { en: "Submit", hi: "जमा करें", ta: "சமர்ப்பி" },
+  next: { en: "Next", hi: "अगला", ta: "அடுத்து" },
+  back: { en: "Back", hi: "वापस", ta: "பின்" },
+  logout: { en: "Log Out", hi: "लॉग आउट", ta: "வெளியேறு" },
+  create_course: { en: "Create Course", hi: "पाठ्यक्रम बनाएं", ta: "பாடம் உருவாக்கு" },
+  send_message: { en: "Type a message...", hi: "संदेश लिखें...", ta: "செய்தி எழுதுங்கள்..." },
+  comments: { en: "Comments", hi: "टिप्पणियाँ", ta: "கருத்துகள்" },
+  add_comment: { en: "Add a comment...", hi: "टिप्पणी जोड़ें...", ta: "கருத்து சேர்..." },
+  no_data: { en: "Nothing yet", hi: "अभी कुछ नहीं", ta: "இன்னும் இல்லை" },
+  completed: { en: "Completed", hi: "पूर्ण", ta: "முடிந்தது" },
+  mark_complete: { en: "Mark Complete", hi: "पूरा करें", ta: "முடிந்ததாக குறி" },
+  correct: { en: "Correct", hi: "सही", ta: "சரி" },
+  incorrect: { en: "Wrong", hi: "गलत", ta: "தவறு" },
+  score: { en: "Your Score", hi: "आपका स्कोर", ta: "உங்கள் மதிப்பெண்" },
+  lessons_done: { en: "Lessons Done", hi: "पाठ पूर्ण", ta: "முடிந்த பாடங்கள்" },
+  quizzes_taken: { en: "Quizzes Taken", hi: "प्रश्नोत्तरी", ta: "வினாக்கள்" },
+  avg_score: { en: "Avg Score", hi: "औसत अंक", ta: "சராசரி" },
+  courses_started: { en: "Courses", hi: "पाठ्यक्रम", ta: "பாடங்கள்" },
+  language: { en: "Language", hi: "भाषा", ta: "மொழி" },
+  offline_ready: { en: "Available Offline", hi: "ऑफलाइन उपलब्ध", ta: "ஆஃப்லைன்" },
+  download: { en: "Download", hi: "डाउनलोड", ta: "பதிவிறக்கு" },
+  downloaded: { en: "Downloaded", hi: "डाउनलोड किया", ta: "பதிவிறக்கம்" },
+  global_chat: { en: "Classroom Chat", hi: "कक्षा चर्चा", ta: "வகுப்பறை அரட்டை" },
+  admin_panel: { en: "Teacher Panel", hi: "शिक्षक पैनल", ta: "ஆசிரியர் பலகை" },
+  title: { en: "Title", hi: "शीर्षक", ta: "தலைப்பு" },
+  description: { en: "Description", hi: "विवरण", ta: "விளக்கம்" },
+  subject: { en: "Subject", hi: "विषय", ta: "பாடம்" },
+  add_lesson: { en: "Add Video Lesson (YouTube ID)", hi: "वीडियो पाठ जोड़ें (YouTube ID)", ta: "காணொளி சேர் (YouTube ID)" },
+  save: { en: "Save Course", hi: "पाठ्यक्रम सहेजें", ta: "சேமி" },
+  no_courses: { en: "No courses yet", hi: "अभी कोई पाठ्यक्रम नहीं", ta: "இன்னும் பாடங்கள் இல்லை" },
+  error_login: {
+    en: "Invalid email or password",
+    hi: "गलत ईमेल या पासवर्ड",
+    ta: "தவறான மின்னஞ்சல் அல்லது கடவுச்சொல்",
+  },
+};
+
+export const languageOptions: { code: Lang; label: string; symbol: string }[] = [
+  { code: "en", label: "English", symbol: "A" },
+  { code: "hi", label: "हिंदी", symbol: "अ" },
+  { code: "ta", label: "தமிழ்", symbol: "அ" },
+];
+
+export function t(key: string, lang: Lang): string {
+  return translations[key]?.[lang] ?? translations[key]?.en ?? key;
+}
